@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useEffect, useState} from 'react';
+import Home from './Component/Home';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './assets/css/index.css'
 
 function App() {
+  const [coords, setCoords] = useState({x: 0, y: 0});
+
+  useEffect(()=>{
+    const handleWindowMouseMove = e =>{
+      setCoords({x:e.x,y:e.y})
+    };
+    
+    window.addEventListener('mousemove',handleWindowMouseMove);
+    return () => {window.removeEventListener('mousemove',handleWindowMouseMove)}
+  },[])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='cursor' style={{left:`${coords.x}px`,top:`${coords.y}px`}}></div>
+      <Home />
     </div>
   );
 }

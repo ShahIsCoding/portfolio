@@ -1,0 +1,35 @@
+@import url('./home.css');
+
+@media screen and (max-width:789px){
+ .cursor{
+    display: none;
+ }   
+}
+
+.cursor{
+    position: absolute;
+    z-index: 10000;
+    background-color: aliceblue;
+    mix-blend-mode: difference;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    animation: rotater 2s infinite ;
+}
+@keyframes rotater {
+    0%{
+        width: 70px;
+        height: 70px;
+        transform: rotateZ(0deg);
+    }
+    50%{
+        width: 10px;
+        height: 10px;
+        transform: rotateZ(180deg);
+    }
+    100%{
+        width: 70px;
+        height: 70px;
+        transform: rotateZ(360deg);
+    }
+}
