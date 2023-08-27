@@ -11,25 +11,26 @@
     z-index: 10000;
     background-color: aliceblue;
     mix-blend-mode: difference;
-    width: 70px;
-    height: 70px;
+    width: 7vw;
+    height: 7vw;
     border-radius: 50%;
     animation: rotater 2s infinite ;
 }
 @keyframes rotater {
     0%{
-        width: 70px;
-        height: 70px;
-        transform: rotateZ(0deg);
+        width: 5vw;
+        height: 5vw;
+        transform: rotateY(0deg) translate3d(0vw,0vw,0vw);
+        content:"Sedf"
     }
     50%{
-        width: 10px;
-        height: 10px;
-        transform: rotateZ(180deg);
+        width: 1vw;
+        height: 1vw;
+        transform: rotateY(180deg) translate3d(2vw,1vw,5vw);
     }
     100%{
-        width: 70px;
-        height: 70px;
-        transform: rotateZ(360deg);
+        width: 5vw;
+        height: 5vw;
+        transform: rotateY(360deg) translate3d(0vw,0vw,0vw);
     }
 }
