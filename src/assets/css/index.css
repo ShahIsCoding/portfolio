@@ -1,10 +1,5 @@
 @import url('./home.css');
-
-@media screen and (max-width:789px){
- .cursor{
-    display: none;
- }   
-}
+@import url('./navbar.css');
 
 .cursor{
     position: absolute;
@@ -21,14 +16,13 @@
         width: 5vw;
         height: 5vw;
         transform: rotateY(0deg) translate3d(0vw,0vw,0vw);
-        content:"Sedf"
     }
-    50%{
+    35%{
         width: 1vw;
         height: 1vw;
         transform: rotateY(180deg) translate3d(2vw,1vw,5vw);
     }
-    100%{
+    70%,100%{
         width: 5vw;
         height: 5vw;
         transform: rotateY(360deg) translate3d(0vw,0vw,0vw);

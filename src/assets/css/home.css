@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 .home{
-    width: 100vw;
     height: 100vh;
     background-color: black;
-    color: aliceblue;
+    color: white;
     font-size: 6vw;
+}
+.home p{
+    font-family: 'Monoton',cursive;
 }
