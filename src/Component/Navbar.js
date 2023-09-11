@@ -1,8 +1,8 @@
 import React from "react";
 
-function Navbar({isLogoVisible,isMenuVisible}){
+function Navbar({isLogoVisible,isMenuVisible,className}){
     return(
-        <div className="nav pt-2 d-flex justify-content-between align-item-center">
+        <div className={`nav pt-2 d-flex justify-content-between align-item-center ${className}`} >
             {isLogoVisible && <div className="text-white mx-5 mylogo">AS</div>}
             {isMenuVisible && <ul className="mynavbar text-left">
                 <li className="nav-item h4">Home</li>

@@ -12,7 +12,6 @@
     transform: translateY(5px);
     border-left: 2px solid white;
     border-bottom: 2px solid white;
-    border-bottom-left-radius: 15%;
 }
 .nav{
     background-color: black;

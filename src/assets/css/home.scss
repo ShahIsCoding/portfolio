@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.home{
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-size: 6vw;
+    font-family: 'Monoton',cursive;
+}
+
+.change_outer {
+    height:8vw;
+    font-family: 'Monoton',cursive;
+    width: max-content;
+    overflow: hidden;
+}  
+.change_inner{
+    animation: rotate 10s infinite;    
+}
+.element {
+    display: block;
+    font-weight: 400;
+    font-family: 'Ubuntu Mono';
+}
+
+@keyframes rotate {
+	0%, 20% {
+		transform: translateY(0);
+	}
+	25%,45% {
+		transform: translateY(-9vw);
+	}
+	50%,70% {
+		transform: translateY(-18vw);
+	}
+	75%,95% {
+		transform: translateY(-27vw);
+	}
+	100% {
+		transform: translateY(-90vw);
+	}
+}
+@media (max-width : 430px) {
+	
+.home{
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-size: 6vh;
+    font-family: 'Monoton',cursive;
+}
+
+.change_outer {
+    height:8vh;
+    font-family: 'Monoton',cursive;
+    width: max-content;
+    overflow: hidden;
+}  
+.change_inner{
+    animation: rotate 10s infinite;    
+}
+.element {
+    display: block;
+    font-weight: 400;
+    font-family: 'Ubuntu Mono';
+}
+
+@keyframes rotate {
+	0%, 20% {
+		transform: translateY(0);
+	}
+	25%,45% {
+		transform: translateY(-9vh);
+	}
+	50%,70% {
+		transform: translateY(-18vh);
+	}
+	75%,95% {
+		transform: translateY(-27vh);
+	}
+	100% {
+		transform: translateY(-90vh);
+	}
+}
+}
