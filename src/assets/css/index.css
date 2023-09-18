@@ -1,6 +1,6 @@
 @import url('./home.scss');
 @import url('./navbar.css');
-
+@import url('./terminal.scss');
 .cursor{
     position: absolute;
     z-index: 10000;

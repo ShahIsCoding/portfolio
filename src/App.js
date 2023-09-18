@@ -22,10 +22,7 @@ function App() {
   return (
     <div className="App">
       <div className={(isMobile())?"":"cursor"} style={{left:`${coords.x}px`,top:`${coords.y}px`}}></div>
-      <Navbar isLogoVisible className="position-absolute zindex-dropdown"/>
       <Home />
-      <br className='p-0'/>
-      <Navbar isMenuVisible />
     </div>
   );
 }

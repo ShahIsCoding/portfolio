@@ -14,21 +14,8 @@
     border-bottom: 2px solid white;
 }
 .nav{
-    background-color: black;
     width: 100%;
     z-index: 1000;
-}
-.mylogo{
-    background-color: black;
-    width: 3rem;
-    height: 3rem;
-    font-size: 2rem;
-    text-align: center;
-    border: 3px solid black;
-    animation-name:borderspin ;
-    animation-duration: 6s;
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    animation-iteration-count: infinite;
 }
 
 @keyframes borderspin {

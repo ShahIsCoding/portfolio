@@ -1,0 +1,42 @@
+.terminal{
+    z-index: 1000;
+    position: absolute;
+    border: 1px white solid;
+    border-radius:5px 5px 15px 15px;
+    width: max(50vw,45vh);
+    height: 50vh;
+    overflow: auto;
+    background-color: #282C34;
+}
+.terminal-header{
+    background-color: #fcfcfc;
+    border-radius: 5px 5px 0 0 ;
+    width: 100%;
+    height: 30px;
+    color: black;
+    font-size: 1rem;
+    padding: 0  0 0 10px;
+    cursor: pointer;
+}
+.terminal-header--close:hover{
+    background-color: red;
+    border-radius:0  5px 0 0;
+}
+.terminal-body{
+
+    height: calc(50vh - 32px);
+    border-radius:0 0 15px 15px;
+    color: #fcfcfc;
+    opacity: 0.85;
+    font-size: 16px;
+    font-family: 'Ubuntu Mono';
+    cursor: none;
+}
+@media (max-width:425px) {
+    .terminal{
+        height: 40vh;
+    }
+    .terminal-body{
+        height: calc(40vh - 32px);
+    }
+}
