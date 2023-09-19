@@ -1,8 +1,7 @@
 import React,{useEffect, useState} from 'react';
-import Home from './Component/Home';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/index.css'
-import Navbar from './Component/Navbar';
+import Home from './Component/Home';
 
 function App() {
   const [coords, setCoords] = useState({x: 0, y: 0});

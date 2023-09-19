@@ -13,7 +13,7 @@ export const Terminal = ({handleClose}) =>{
         <div className="terminal">
             <div className="terminal-header d-flex justify-content-between">
                 <span className='d-flex align-items-center'><TerminalIcon /> shahbash</span>
-                <span className='terminal-header--close px-3 py-1' onClick={()=>{handleClose()}}>X</span>
+                <span className='terminal-header--close px-3 py-1' onClick={handleClose}>X</span>
             </div>
             <div className="terminal-body ubuntu p-1">
                 {terminaltext("clear")}

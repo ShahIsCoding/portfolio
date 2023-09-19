@@ -40,3 +40,11 @@
         height: calc(40vh - 32px);
     }
 }
+.top-roll-transition{
+    position: relative;
+    animation: top-roller  0.2461s ease-in;
+}
+@keyframes top-roller {
+    0%{top:0;}
+    100%{top:-100%;}
+}
