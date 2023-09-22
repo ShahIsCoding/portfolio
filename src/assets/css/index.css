@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @import url('./intropage.scss');
 @import url('./navbar.css');
 @import url('./terminal.scss');
-@import url('./profile.css');
+@import url('./profile.scss');
+.App{
+    height: 100vh;
+    background-color: rgb(14, 15, 16);
+    color: white;
+}
 .ubuntu{
-    font-family: 'Ubuntu Mono', monospace !important;
+    font-family: 'Ubuntu', sans-serif !important;
 }
 .cursor{
     position: absolute;
@@ -15,6 +22,9 @@
     height: 7vw;
     border-radius: 50%;
     animation: rotater 2s infinite ;
+}
+.vh100{
+    height: 100vh;
 }
 @keyframes rotater {
     0%{
@@ -36,4 +46,10 @@
 
 .f15{
     font-size: 1.5rem;
+    line-height: 2.7rem;
+}
+@media (max-width:425px) {
+    .f15{
+        font-size: 1.42rem;
+    }
 }

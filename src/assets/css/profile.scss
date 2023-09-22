@@ -1,0 +1,17 @@
+.profile ul{
+    list-style-type: none;
+    cursor: pointer;
+}
+.profile ul li{
+    font-size: min(10vh,12vw);
+}
+
+form input::placeholder{
+    color: aliceblue;
+    font-family: 'Ubuntu', sans-serif !important;
+    font-size: 400;
+}
+
+.socialMedia svg{
+    height: 100px;
+}
