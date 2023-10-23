@@ -1,3 +1,5 @@
+import React from "react";
+
 function IntroPage (){
     return (
         <div className="blackbg d-flex flex-column justify-content-center align-items-center">

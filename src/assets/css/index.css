@@ -7,7 +7,8 @@
 @import url('./profile.scss');
 .App{
     height: 100vh;
-    background-color: rgb(14, 15, 16);
+    background-color: rgba(0, 0, 0);
+    background-image: radial-gradient(rgba(29, 78, 216, 0.15), transparent 80%);
     color: white;
 }
 .ubuntu{
@@ -52,4 +53,8 @@
     .f15{
         font-size: 1.42rem;
     }
+}
+.active{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
