@@ -8,19 +8,15 @@ export const Projects = () => {
       {projectData.map((i, idx) => {
         return (
           <div className="bg-gray-secondary rounded m-2 col">
-            <Suspense fallback={<div>wpoerif</div>}> 
-              {React.lazy(() => {
-                <img
-                  style={{
-                    objectFit: "cover",
-                    aspectRatio: "16/9",
-                  }}
-                  className="col-12"
-                  src={i.src}
-                  alt={i.title}
-                />;
-              })}
-            </Suspense>
+            <img
+              style={{
+                objectFit: "cover",
+                aspectRatio: "16/9",
+              }}
+              className="col-12"
+              src={i.src}
+              alt={i.title}
+            />
             <div className="row justify-content-between text-green">
               <span className="col-6">{i.title}</span>
               <span className="col-3 float-end">
