@@ -9,7 +9,7 @@ const ProfilePage = () => {
   const [selected, SetSelected] = useState(1);
   return (
     <div className="row vh100 container mx-auto">
-      <div className="col-6 d-flex justify-content-center flex-column profile">
+      {/* <div className="col-6 d-flex justify-content-center flex-column profile">
         <ul onClick={(e) => SetSelected(e.target.value)}>
           <li
             value={0}
@@ -36,13 +36,11 @@ const ProfilePage = () => {
             <span style={{ fontSize: "20px" }}>4</span>Contact Me
           </li>
         </ul>
-      </div>
-      <div className="col-md-6 col-12 ubuntu px-4 f15 border">
-        {selected === 0 && <About />}
-        {selected === 1 && <Stacks />}
-        {selected === 2 && <Projects />}
-        {selected === 3 && <Contact />}
-      </div>
+      </div> */}
+      <About />
+      <Stacks />
+      <Projects />
+      <Contact />
     </div>
   );
 };

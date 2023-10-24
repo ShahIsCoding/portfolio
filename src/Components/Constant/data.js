@@ -28,17 +28,22 @@ export const StacksData = [
 export const projectData = [
   {
     title: "Reddit Clone",
-    src:"https://wallpapers.net/web/wallpapers/soccer-streams-reddit-hd-wallpaper/thumbnail/lg.jpg",
-    describe:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent hendrerit tortor gravida fringilla ullamcorper. Nam ligula magna",
+    src: "https://wallpapers.net/web/wallpapers/soccer-streams-reddit-hd-wallpaper/thumbnail/lg.jpg",
+    describe: ["React Js", "HTML", "CSS", "SCSS", "Javascript", "Bootstrap"],
     github: "#",
     livelink: "#",
   },
   {
     title: "Amazon Clone",
-    src:"https://wallpapers.net/web/wallpapers/soccer-streams-reddit-hd-wallpaper/thumbnail/lg.jpg",
-    describe:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent hendrerit tortor gravida fringilla ullamcorper. Nam ligula magna",
+    src: "https://wallpapers.net/web/wallpapers/soccer-streams-reddit-hd-wallpaper/thumbnail/lg.jpg",
+    describe: ["React Js", "HTML", "CSS", "SCSS", "Javascript", "Bootstrap"],
+    github: "#",
+    livelink: "#",
+  },
+  {
+    title: "Open Source",
+    src: "https://c4.wallpaperflare.com/wallpaper/415/799/789/ubuntu-operating-system-logo-wallpaper-preview.jpg",
+    describe: ["React Js", "HTML", "CSS", "SCSS", "Javascript", "Bootstrap"],
     github: "#",
     livelink: "#",
   },

@@ -1,8 +1,11 @@
 import React from "react";
-export const StackCard = ({logo, stack}) => {
+export const StackCard = ({ stack, xs }) => {
   return (
-    <div className="d-inline rounded stackcard px-3 py-2 my-1">
-      <h6>{stack}</h6>
-    </div>
+    <p
+      className={`d-inline rounded stackcard  my-1 ${xs ? "p-1" : "px-3 py-2"}`}
+      style={{ fontSize: xs ? "10px" : "" }}
+    >
+      {stack}
+    </p>
   );
 };

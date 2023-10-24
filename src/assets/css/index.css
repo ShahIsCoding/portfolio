@@ -20,12 +20,11 @@
 .cursor {
   position: absolute;
   z-index: 10000;
-  background-color: white;
-  mix-blend-mode: difference;
-  width: 7vw;
-  height: 7vw;
+  background-color: transparent;
+  width: 2vw;
+  height: 2vw;
   border-radius: 50%;
-  animation: rotater 2s infinite;
+  border: 2px solid white;
 }
 .vh100 {
   height: 100vh;

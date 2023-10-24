@@ -1,21 +1,26 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { AiFillGithub, AiOutlineDesktop } from "react-icons/ai";
 import { projectData } from "../Constant/data";
+import { StackCard } from "./StackCard";
 export const Projects = () => {
   return (
-    <div>
+    <div className=" row">
       {projectData.map((i, idx) => {
         return (
-          <div className="bg-gray-secondary rounded px-1 py-2 my-2 row">
-            <img
-              style={{
-                objectFit: "cover",
-                aspectRatio: "16/9",
-              }}
-              className="col-12"
-              src={i.src}
-              alt={i.title}
-            />
+          <div className="bg-gray-secondary rounded m-2 col">
+            <Suspense fallback={<div>wpoerif</div>}> 
+              {React.lazy(() => {
+                <img
+                  style={{
+                    objectFit: "cover",
+                    aspectRatio: "16/9",
+                  }}
+                  className="col-12"
+                  src={i.src}
+                  alt={i.title}
+                />;
+              })}
+            </Suspense>
             <div className="row justify-content-between text-green">
               <span className="col-6">{i.title}</span>
               <span className="col-3 float-end">
@@ -28,7 +33,11 @@ export const Projects = () => {
                 />
               </span>
             </div>
-            <p className="px-2 h6 text-green-secondary">{i.describe}</p>
+            <p className="text-green-secondary">
+              {i.describe.map((j, idx) => {
+                return <StackCard stack={j} xs />;
+              })}
+            </p>
           </div>
         );
       })}
