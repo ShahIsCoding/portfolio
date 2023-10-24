@@ -3,7 +3,7 @@ import { profile } from "../Constant/data";
 
 export const About = () => {
   return (
-    <div className="d-flex flex-column justify-content-around bg-gray-secondary my-auto p-4 h-50">
+    <div className="row bg-gray-secondary h-25 rounded px-2 my-1">
       <p className="ubuntu">Hi</p>
       <p className="h1 ubuntu text-green">I'm {profile.fn + " " + profile.ln}</p>
       <p className="h4 ubuntu">{profile.job_description}</p>

@@ -8,7 +8,7 @@ import { Contact } from "../component/Contact";
 const ProfilePage = () => {
   const [selected, SetSelected] = useState(1);
   return (
-    <div className="row vh100 container mx-auto">
+    <div className="container">
       {/* <div className="col-6 d-flex justify-content-center flex-column profile">
         <ul onClick={(e) => SetSelected(e.target.value)}>
           <li

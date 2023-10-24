@@ -7,13 +7,13 @@
 @import url("./profile.scss");
 @import url("./stackcard.scss");
 .App {
-  height: 100vh;
-  overflow: auto;
   background-color: rgba(0, 0, 0);
   background-image: radial-gradient(rgba(29, 78, 216, 0.15), transparent 80%);
   color: white;
 }
-
+.pointer{
+  cursor: pointer;
+}
 .ubuntu {
   font-family: "Ubuntu", sans-serif !important;
 }

@@ -7,11 +7,11 @@ export const Stacks = () => {
     <div className="row">
       {StacksData.map((i, idx) => {
         return (
-          <div className="bg-gray-secondary rounded px-3 py-2 m-2 col flex1">
+          <div className="bg-gray-secondary rounded px-3 py-2 mx-1 col col-md flex1">
             <h6>{i.title}</h6>
             <div className="d-flex flex-wrap px-2 ">
               {i.stacks.map((j, jdx) => {
-                return <StackCard stack={j} />;
+                return <StackCard stack={j} xs/>;
               })}
             </div>
           </div>
