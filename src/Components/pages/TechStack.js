@@ -32,11 +32,11 @@ const TechStack = () => {
     { name: "git", src: git },
   ];
   return (
-    <div className="h-screen px-24 ">
-      <div className="h-screen">
-        <div className="mb-8">
+    <div className="h-screen px-24  flex flex-col justify-center">
+      <div className="h-2/4  flex flex-col justify-between">
+        <div className="border-b">
           <h1 className="text-4xl">My Tech Stack</h1>
-          <h1 className="text-lg">
+          <h1 className="text-sm pt-5">
             Technologies I’ve been working with recently
           </h1>
         </div>

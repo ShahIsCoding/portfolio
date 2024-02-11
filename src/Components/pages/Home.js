@@ -2,7 +2,7 @@ import React from "react";
 import profile from "../assets/profile.png";
 const Home = () => {
   return (
-    <div className="border flex items-center justify-center h-screen">
+    <div className="border-b flex items-center justify-center h-screen bg-inherit">
       <div className="grid grid-cols-2 grid-rows-1 items-center ">
         <div className="text-4xl md:text-4xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.green.400),theme(colors.green.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.green.100),theme(colors.green.400))] bg-[length:200%_auto] animate-gradient">
           Hi 👋,
