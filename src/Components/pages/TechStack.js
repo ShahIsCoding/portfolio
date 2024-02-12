@@ -13,26 +13,28 @@ import tailwindcss from "../assets/tailwindcss.png";
 import git from "../assets/git.png";
 import css from "../assets/css.png";
 import mysql from "../assets/mysql.png";
+import Stack from "./Stack";
 
 const TechStack = () => {
   const techStack = [
-    { name: "html5", src: html5 },
-    { name: "css", src: css },
-    { name: "sass", src: sass },
-    { name: "javascript", src: javascript },
-    { name: "react", src: reactjs },
-    { name: "bootstrap", src: bootstrap },
-    { name: "tailwindcss", src: tailwindcss },
-    { name: "redux", src: redux },
-    { name: "nodejs", src: nodejs },
-    { name: "java", src: java },
-    { name: "spring", src: springboot },
-    { name: "mysql", src: mysql },
-    { name: "mongodb", src: mongodb },
-    { name: "git", src: git },
+    { name: "HTML5", src: html5 },
+    { name: "CSS", src: css },
+    { name: "Sass", src: sass },
+    { name: "JavaScript", src: javascript },
+    { name: "ReactJs", src: reactjs },
+    { name: "Bootstrap", src: bootstrap },
+    { name: "Tailwind CSS", src: tailwindcss },
+    { name: "Redux", src: redux },
+    { name: "Node.js", src: nodejs },
+    { name: "Java", src: java },
+    { name: "Spring", src: springboot },
+    { name: "MySQL", src: mysql },
+    { name: "MongoDB", src: mongodb },
+    { name: "Git", src: git },
   ];
+
   return (
-    <div className="h-screen px-24  flex flex-col justify-center">
+    <div className="h-screen px-24  flex flex-col justify-center border">
       <div className="h-2/4  flex flex-col justify-between">
         <div className="border-b">
           <h1 className="text-4xl">My Tech Stack</h1>
@@ -40,17 +42,9 @@ const TechStack = () => {
             Technologies I’ve been working with recently
           </h1>
         </div>
-        <div className="grid md:grid-cols-7 grid-cols-3 ">
-          {techStack.map((stack, idx) => {
-            return (
-              <div className="flex justify-center">
-                <img
-                  src={stack.src}
-                  alt={"stack.name"}
-                  className="w-20 h-20 "
-                />
-              </div>
-            );
+        <div className="grid md:grid-cols-7 grid-cols-3 gap-3 ">
+          {techStack.map(({ src, name }, idx) => {
+            return <Stack src={src} name={name} />;
           })}
         </div>
       </div>
