@@ -7,7 +7,7 @@ const Home = () => {
         <div className="text-4xl md:text-4xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.green.400),theme(colors.green.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.green.100),theme(colors.green.400))] bg-[length:200%_auto] animate-gradient">
           Hi 👋,
           <br /> My name is Abhishek Shah
-          <br /> I build things for web
+          <br /> I build things for webzzz
         </div>
         <div className="image flex justify-center">
           <img src={profile} alt="profilePic" width="300px" />

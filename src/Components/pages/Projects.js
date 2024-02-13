@@ -28,7 +28,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="px-24 h-screen flex flex-col justify-center">
+    <div className="px-24 h-screen flex flex-col justify-center border-b">
       <div className="flex flex-col justify-between ">
         <div className="border-b mb-10">
           <h1 className="text-4xl">Projects & Contributions:</h1>
