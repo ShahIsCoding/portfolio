@@ -28,13 +28,15 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="px-24 h-screen flex flex-col justify-center border-b">
-      <div className="flex flex-col justify-between ">
+    <div className="md:px-24 p-5 h-screen flex flex-col justify-center border-b  dark:bg-black dark:border-gray-800 dark:text-white">
+      <div className=" flex flex-col justify-between ">
         <div className="border-b mb-10">
-          <h1 className="text-4xl">Projects & Contributions:</h1>
+          <h1 className="text-4xl bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.green.400),theme(colors.green.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.green.100),theme(colors.green.400))] bg-[length:200%_auto] animate-gradient">
+            Projects & Contributions:
+          </h1>
           <h1 className="text-sm pt-5">Things I’ve help built so far</h1>
         </div>
-        <div className="flex gap-4">
+        <div className=" overflow-x-scroll lg:overflow-hidden flex gap-5">
           {projectsDetails.map(
             ({ name, desc, techStack, githubLink, imgURL, liveLink }) => {
               return (
