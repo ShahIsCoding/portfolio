@@ -11,23 +11,21 @@ const ProjectCard = ({
   liveLink,
 }) => {
   return (
-    <div className="bg-slate-50 border rounded-xl w-1/2 dark:bg-black">
-      <div className="h-52 w-full">
-        <img className="h-full w-full  rounded-t-xl" src={imgURL} />
+    <div className="rounded-xl md:w-1/2 dark:bg-white text-black flex flex-row">
+      <div className="md:h-40 md:w-full h-32 w-10">
+        <img src={imgURL} />
       </div>
-      <div className="p-3 flex flex-col text-left w-full">
-        <div className="p-1 flex justify-between">
+      <div className="p-3 flex flex-col justify-between text-left w-full">
+        <div className="flex justify-between">
           <h1 className="font-bold">{name}</h1>
           {liveLink && (
             <a href={liveLink} target="_blank">
-              <img src={link} alt="live" className="w-6" />
+              <img src={link} alt="live" className="w-6 bg-white " />
             </a>
           )}
         </div>
-        <p className="text-sm py-2 hidden md:block">{desc}</p>
-        <div className="text-xs py-2 hidden md:block">
-          Tech Stack : {techStack}
-        </div>
+        <p className="text-sm py-2 ">{desc}</p>
+        <div className="text-xs py-2 ">Tech Stack : {techStack}</div>
         <div
           className="flex flex-row items-center cursor-pointer w-full"
           onClick={() =>

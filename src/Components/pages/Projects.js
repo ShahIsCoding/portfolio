@@ -36,7 +36,7 @@ const Projects = () => {
           </h1>
           <h1 className="text-sm pt-5">Things I’ve help built so far</h1>
         </div>
-        <div className=" overflow-x-scroll lg:overflow-hidden flex gap-5">
+        <div className=" overflow-x-scroll lg:overflow-hidden flex gap-5 md:flex-row flex-col">
           {projectsDetails.map(
             ({ name, desc, techStack, githubLink, imgURL, liveLink }) => {
               return (
