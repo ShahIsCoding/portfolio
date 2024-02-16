@@ -1,7 +1,6 @@
-import React from "react";
-import Navbar from "./Components/Navbar";
-import Body from "./Components/Body";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
+import Navbar from "./Components/components/Navbar";
+import Body from "./Components/components/Body";
 
 const App = () => {
   useEffect(() => {

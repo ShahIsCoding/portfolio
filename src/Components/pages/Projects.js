@@ -1,5 +1,7 @@
 import React from "react";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../components/ProjectCard";
+import Header from "../components/Header";
+import Wrapper from "../components/Wrapper";
 
 const Projects = () => {
   const projectsDetails = [
@@ -26,34 +28,39 @@ const Projects = () => {
       imgURL: "https://images.unsplash.com/photo-1484589065579-248aad0d8b13",
       liveLink: "https://tictactoe-five-sand.vercel.app/",
     },
+    {
+      name: "Portfolio",
+      desc: "This website",
+      techStack: "ReactJs,  Javascript, TailwindCss",
+      githubLink: "https://github.com/ShahIsCoding/shahiscodingportfolio",
+      imgURL:
+        "https://images.unsplash.com/photo-1542052722982-1c9f552a534b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      liveLink: "https://shahiscoding.vercel.app/",
+    },
   ];
   return (
-    <div className="md:px-24 p-5 h-screen flex flex-col justify-center border-b  dark:bg-black dark:border-gray-800 dark:text-white">
-      <div className=" flex flex-col justify-between ">
-        <div className="border-b mb-10">
-          <h1 className="text-4xl bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.green.400),theme(colors.green.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.green.100),theme(colors.green.400))] bg-[length:200%_auto] animate-gradient">
-            Projects & Contributions:
-          </h1>
-          <h1 className="text-sm pt-5">Things I’ve help built so far</h1>
-        </div>
-        <div className=" overflow-x-scroll lg:overflow-hidden flex gap-5 md:flex-row flex-col">
-          {projectsDetails.map(
-            ({ name, desc, techStack, githubLink, imgURL, liveLink }) => {
-              return (
-                <ProjectCard
-                  name={name}
-                  desc={desc}
-                  techStack={techStack}
-                  githubLink={githubLink}
-                  imgURL={imgURL}
-                  liveLink={liveLink}
-                />
-              );
-            }
-          )}
-        </div>
+    <Wrapper addedClass="flex flex-col justify-center">
+      <Header
+        title="Projects & Contributions:"
+        subt="Things I’ve help built so far"
+      />
+      <div className="p- h-3/4 overflow-y-auto rounded projectCards">
+        {projectsDetails.map(
+          ({ name, desc, techStack, githubLink, imgURL, liveLink }) => {
+            return (
+              <ProjectCard
+                name={name}
+                desc={desc}
+                techStack={techStack}
+                githubLink={githubLink}
+                imgURL={imgURL}
+                liveLink={liveLink}
+              />
+            );
+          }
+        )}
       </div>
-    </div>
+    </Wrapper>
   );
 };
 

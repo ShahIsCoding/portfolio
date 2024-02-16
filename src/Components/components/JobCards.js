@@ -7,7 +7,7 @@ const JobCards = ({ companyName, position, type, locate, time }) => {
   return (
     <div className="w-full flex flex-col p-2 border-b mt-2">
       <div className="flex justify-between">
-        <h1 className="lg:text-4xl md:text-xl text-xs">{position}</h1>
+        <h1 className="lg:text-4xl text-lg">{position}</h1>
         <div className="rounded-xl md:text-sm text-[8px] bg-green-300 text-green-900 font-bold py-1 md:px-7 px-2 my-auto">
           {type}
         </div>

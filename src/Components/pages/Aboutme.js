@@ -1,5 +1,7 @@
 import React from "react";
-import JobCards from "./JobCards";
+import JobCards from "../components/JobCards";
+import Header from "../components/Header";
+import Wrapper from "../components/Wrapper";
 
 const Aboutme = () => {
   const workExperience = [
@@ -8,26 +10,28 @@ const Aboutme = () => {
       position: "Software Engineer [SWE 1]",
       type: "Full-time",
       locate: "Remote",
-      time: "current (8 months)",
+      time: "current (9 m)",
+    },
+    {
+      companyName: "CDC IIT ISM",
+      position: "Full Stack Developer",
+      type: "Internship",
+      locate: "Dhanbad",
+      time: "1yr",
     },
     {
       companyName: "Katonic.ai",
       position: "MERN Stack Engineer",
       type: "Internship",
       locate: "Remote",
-      time: "3 months",
+      time: "3 m",
     },
   ];
   return (
-    <div className="h-screen md:px-24  p-5 flex flex-col justify-center border dark:border-gray-800 dark:bg-black dark:text-white">
-      <div className="h-2/4  flex flex-col justify-between">
-        <div className="border-b">
-          <h1 className="text-4xl bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.green.400),theme(colors.green.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.green.100),theme(colors.green.400))] bg-[length:200%_auto] animate-gradient ">
-            About Me
-          </h1>
-          <h1 className="text-sm pt-5">Get to know me a little better</h1>
-        </div>
-        <div className="lg:w-3/4 w-full ">
+    <Wrapper addedClass="">
+      <Header title="About Me" subt="Get to know me a little better" />
+      <div className="lg:grid lg:grid-cols-5">
+        <div className="px-10 col-span-3">
           {workExperience.map(
             ({ companyName, position, type, locate, time }) => {
               return (
@@ -42,8 +46,9 @@ const Aboutme = () => {
             }
           )}
         </div>
+        {/* <div className="border h-full col-span-2"></div> */}
       </div>
-    </div>
+    </Wrapper>
   );
 };
 

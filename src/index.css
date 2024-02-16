@@ -8,3 +8,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* For Webkit browsers (Chrome, Safari) */
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+}
+
+/* For Firefox */
+.scrollbar::-moz-scrollbar {
+  width: 8px;
+}
+
+.scrollbar::-moz-scrollbar-thumb {
+  background-color: #ddd;
+}

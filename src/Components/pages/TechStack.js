@@ -14,6 +14,8 @@ import git from "../assets/git.png";
 import css from "../assets/css.png";
 import mysql from "../assets/mysql.png";
 import Stack from "./Stack";
+import Header from "../components/Header";
+import Wrapper from "../components/Wrapper";
 
 const TechStack = () => {
   const techStack = [
@@ -27,30 +29,24 @@ const TechStack = () => {
     { name: "Redux", src: redux },
     { name: "Node.js", src: nodejs },
     { name: "Java", src: java },
-    { name: "Spring", src: springboot },
+    { name: "SpringBoot", src: springboot },
     { name: "MySQL", src: mysql },
     { name: "MongoDB", src: mongodb },
     { name: "Git", src: git },
   ];
 
   return (
-    <div className="h-screen md:px-24 p-5 flex flex-col justify-center border dark:border-gray-800 dark:bg-black dark:text-white">
-      <div className="h-2/4  flex flex-col justify-between">
-        <div className="border-b mb-5">
-          <h1 className="text-4xl bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.green.400),theme(colors.green.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.green.100),theme(colors.green.400))] bg-[length:200%_auto] animate-gradient">
-            My Tech Stack
-          </h1>
-          <h1 className="text-sm pt-5">
-            Technologies I’ve been working with recently
-          </h1>
-        </div>
-        <div className="grid lg:grid-cols-7 grid-cols-3 gap-3 overflow-y-scroll lg:overflow-hidden">
-          {techStack.map(({ src, name }, idx) => {
-            return <Stack src={src} name={name} />;
-          })}
-        </div>
+    <Wrapper addedClass="flex flex-col justify-center">
+      <Header
+        title="Tech Stack"
+        subt="Technologies I’ve been working with recently"
+      />
+      <div className="scrollbar h-3/4 grid gap-3 grid-cols-4 overflow-y-scroll lg:overflow-hidden ">
+        {techStack.map(({ src, name }, idx) => {
+          return <Stack src={src} name={name} />;
+        })}
       </div>
-    </div>
+    </Wrapper>
   );
 };
 
