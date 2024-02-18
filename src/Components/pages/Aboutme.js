@@ -31,7 +31,7 @@ const Aboutme = () => {
     <Wrapper addedClass="">
       <Header title="About Me" subt="Get to know me a little better" />
       <div className="lg:grid lg:grid-cols-5">
-        <div className="px-10 col-span-3">
+        <div className="px-4 col-span-3">
           {workExperience.map(
             ({ companyName, position, type, locate, time }) => {
               return (

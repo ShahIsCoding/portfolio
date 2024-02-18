@@ -41,7 +41,7 @@ const TechStack = () => {
         title="Tech Stack"
         subt="Technologies I’ve been working with recently"
       />
-      <div className="scrollbar h-3/4 grid gap-3 grid-cols-4 overflow-y-scroll lg:overflow-hidden ">
+      <div className="scrollbar h-3/4 grid gap-3 lg:grid-cols-6 md:grid-cols-4 grid-cols-2 overflow-y-scroll lg:overflow-hidden ">
         {techStack.map(({ src, name }, idx) => {
           return <Stack src={src} name={name} />;
         })}

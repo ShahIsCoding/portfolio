@@ -13,7 +13,7 @@ const menu = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="text-gray-600 bg-slate-50 cursor-pointer z-10 dark:bg-black">
+    <div className="text-gray-600 bg-slate-50 cursor-pointer z-10 dark:bg-black py-1">
       <div className="mx-5 my-4">
         <div className="mx-auto flex flex-row justify-between">
           <div className="logo text-left">
@@ -47,8 +47,9 @@ const Navbar = () => {
                   );
                 }}
               >
-                <button className="text-white">
-                  Resume <DownloadOutlined className="text-white" />
+                <button className="dark:text-gray-400 text-black hover:text-white">
+                  Resume
+                  <DownloadOutlined className="dark:text-gray-400 text-black hover:text-white" />
                 </button>
               </li>
               <li className="text-gray-400 text-xl cursor-pointer hover:text-black dark:hover:text-white">

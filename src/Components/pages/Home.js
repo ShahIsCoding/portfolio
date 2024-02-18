@@ -1,17 +1,23 @@
 import React from "react";
 import profile from "../assets/profile.png";
 import Wrapper from "../components/Wrapper";
+import { gradient } from "../constants/constanst";
 const Home = () => {
   return (
-    <Wrapper>
-      <div className=" md:flex md:flex-row ">
-        <h1 className="m-24 text-3xl  bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.green.400),theme(colors.green.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.green.100),theme(colors.green.400))] bg-[length:200%_auto] animate-gradient">
-          Hi 👋,
-          <br /> My name is Abhishek Shah
-          <br /> I build things for webzzz
-        </h1>
-      </div>
-      <img src={profile} alt="profilePic" className="w-1/2 mx-auto" />
+    <Wrapper
+      addedClass="flex items-center md:justify-center"
+      childClass="flex flex-col justify-center  md:flex-row md:items-center"
+    >
+      <h1 className={"mx-auto mb-10 text-3xl pl-10" + gradient}>
+        Hi 👋,
+        <br /> My name is Abhishek Shah
+        <br /> I build things for webzzz
+      </h1>
+      <img
+        src={profile}
+        alt="profilePic"
+        className="lg:w-2/6 md:w-2/4 w-1/2 mx-auto"
+      />
     </Wrapper>
   );
 };

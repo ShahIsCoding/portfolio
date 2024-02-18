@@ -44,7 +44,7 @@ const Projects = () => {
         title="Projects & Contributions:"
         subt="Things I’ve help built so far"
       />
-      <div className="p- h-3/4 overflow-y-auto rounded projectCards">
+      <div className="px-5 h-4/5  overflow-y-auto rounded projectCards lg:grid lg:grid-cols-2 ">
         {projectsDetails.map(
           ({ name, desc, techStack, githubLink, imgURL, liveLink }) => {
             return (

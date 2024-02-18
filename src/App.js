@@ -12,12 +12,14 @@ const App = () => {
   }, []);
 
   return (
-    <div className="w-screen bg-black ">
-      <div className="z-50 fixed top-0  w-full ">
-        <Navbar />
+    <>
+      <div className="w-screen bg-black ">
+        <div className="z-50 fixed top-0  w-full ">
+          <Navbar />
+        </div>
+        <Body />
       </div>
-      <Body />
-    </div>
+    </>
   );
 };
 

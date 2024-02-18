@@ -10,12 +10,12 @@ const ProjectCard = ({
   liveLink,
 }) => {
   return (
-    <div className="flex bg-white text-black m-1 rounded-xl h-48 border-black  border-4">
-      <div className="mr-2 h-full   border-r-2">
+    <div className="flex md:flex-row flex-col bg-white text-black m-5 rounded-xl md:h-52 border-black  ring dark:ring-white ring-offset-0 dark:border-white">
+      <div className="md:mr-2 h-full   md:border-r-2">
         <img
           src={imgURL}
           alt="images"
-          className="rounded-s-xl h-full object-cover min-w-32"
+          className="md:rounded-s-xl rounded-t-xl object-cover md:h-full h-32 w-full  md:min-w-32 shrink-0"
         />
       </div>
       <div className="flex flex-col justify-between p-2 w-full">
