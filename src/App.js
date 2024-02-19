@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import Navbar from "./Components/components/Navbar";
 import Body from "./Components/components/Body";
+import "swiper/css/bundle";
+import "swiper/css";
 
 const App = () => {
   useEffect(() => {

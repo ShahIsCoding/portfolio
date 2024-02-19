@@ -11,7 +11,7 @@ const Home = () => {
       <h1 className={"mx-auto mb-10 text-3xl pl-10" + gradient}>
         Hi 👋,
         <br /> My name is Abhishek Shah
-        <br /> I build things for webzzz
+        <br /> I build things for web
       </h1>
       <img
         src={profile}

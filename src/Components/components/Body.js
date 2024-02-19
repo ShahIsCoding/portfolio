@@ -7,7 +7,7 @@ import Aboutme from "../pages/Aboutme";
 
 const Body = () => {
   return (
-    <div className="h-screen w-screen bg-slate-50 scrollbar">
+    <div className="h-screen w-screen bg-black scrollbar">
       <div id="home" className="h-screen w-screen ">
         <Home />
       </div>

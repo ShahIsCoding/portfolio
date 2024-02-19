@@ -4,7 +4,7 @@ const Wrapper = ({ addedClass, childClass, children }) => {
   return (
     <div
       className={
-        "h-screen md:px-24 p-5  border dark:border-gray-800 dark:bg-black dark:text-white " +
+        "h-screen md:px-24 p-5  border border-gray-800 bg-black text-white " +
         addedClass
       }
     >

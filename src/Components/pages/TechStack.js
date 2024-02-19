@@ -16,6 +16,8 @@ import mysql from "../assets/mysql.png";
 import Stack from "./Stack";
 import Header from "../components/Header";
 import Wrapper from "../components/Wrapper";
+import { SwiperSlide, Swiper } from "swiper/react";
+import { Autoplay, EffectCoverflow } from "swiper/modules";
 
 const TechStack = () => {
   const techStack = [
@@ -41,10 +43,43 @@ const TechStack = () => {
         title="Tech Stack"
         subt="Technologies I’ve been working with recently"
       />
-      <div className="scrollbar h-3/4 grid gap-3 lg:grid-cols-6 md:grid-cols-4 grid-cols-2 overflow-y-scroll lg:overflow-hidden ">
-        {techStack.map(({ src, name }, idx) => {
-          return <Stack src={src} name={name} />;
-        })}
+      <div className="scrollbar h-3/4 flex items-center">
+        <Swiper
+          breakpoints={{
+            320: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 5,
+              spaceBetween: 30,
+            },
+          }}
+          grabCursor={true}
+          centeredSlides={true}
+          effect="coverflow"
+          coverflowEffect={{
+            rotate: 10,
+            scale: 1.2,
+            depth: 300,
+          }}
+          modules={[Autoplay, EffectCoverflow]}
+          autoplay={{
+            delay: 1500,
+          }}
+        >
+          {techStack.map(({ src, name }, idx) => {
+            return (
+              <SwiperSlide key={idx}>
+                <Stack src={src} name={name} />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
     </Wrapper>
   );

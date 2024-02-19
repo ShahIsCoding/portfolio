@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="h-screen w-screen flex flex-col justify-center items-center text-center dark:bg-black dark:text-white">
+    <div className="h-screen w-screen flex flex-col justify-center items-center text-center bg-black text-white">
       <div>
         <h1 className="lg:text-4xl md:text-xl text-md">
           For any questions please mail:
